@@ -13,3 +13,6 @@ backend/__pycache__/
 .DS_Store
 Thumbs.db
 
+backend/venv/Lib
+backend/venv
+

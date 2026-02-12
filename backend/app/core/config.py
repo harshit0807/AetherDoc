@@ -1,10 +1,12 @@
-from dotenv import load_dotenv
-import os
+from pydantic_settings import BaseSettings
 
-load_dotenv()
+class Settings(BaseSettings):
+    MONGO_URI: str
+    DB_NAME: str
+    JWT_SECRET: str
+    GEMINI_API_KEY: str
 
-class Settings:
-    MONGO_URI = os.getenv("MONGO_URI")
-    DB_NAME = os.getenv("DB_NAME")
+    class Config:
+        env_file = ".env"
 
 settings = Settings()

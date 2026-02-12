@@ -24,3 +24,12 @@ requests==2.31.0
 # Optional (recommended)
 # -------------------------
 loguru==0.7.2
+
+
+fastapi
+uvicorn
+motor
+python-jose
+passlib[bcrypt]
+python-dotenv
+
